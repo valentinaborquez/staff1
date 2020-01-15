@@ -1,1 +1,122 @@
-<p>registrocol works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<title>Document</title>
+</head>
+<body>
+  <ul class="nav nav-tabs bg-dark">
+    <li class="nav-item">
+      <a class="nav-link" href="/accesoadmin">Inicio</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Usuarios</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Crear Usuarios</a>
+        <a class="dropdown-item" href="#">Lista Usuarios</a>
+     
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Proyectos</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Crear Proyecto</a>
+        <a class="dropdown-item" href="#">Lista Proyecto</a>
+     
+      </div>
+    </li>
+  </ul>
+
+  <br>
+  <br>
+
+  <div class="container">
+    <form>
+      <h3>REGISTRO <span class="badge badge-secondary"></span></h3>
+      <br>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre Apellido">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="correo">Correo</label>
+          <input type="mail" class="form-control" id="correo" placeholder="correo@ejemplo.com">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" class="form-control" id="contrasena" placeholder="*********">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="direccion">Dirección</label>
+          <input type="text" class="form-control" id="direccion" placeholder="Av calle #1234">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="telefono">Telefono</label>
+          <input type="text" class="form-control" id="telefono" placeholder="1234567">
+        </div>
+      </div>
+     
+      <br>
+
+      <h3>HABILIDADES <span class="badge badge-secondary"></span></h3>
+
+      <div class="form-group">
+        <label for="idioma">Idioma</label>
+        <select class="form-control" id="idioma">
+          <option>Ingles</option>
+          <option>Frances</option>
+          <option>Aleman</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="especialidad">Especialidad</label>
+        <select class="form-control" id="especialidad">
+          <option>JAVA</option>
+          <option>PHP</option>
+          <option>LARAVEL</option>
+          <option>OTROS</option>
+        </select>
+      </div>
+      <div class="form-group"> 
+      <label for="titulo">Titulo</label>
+      <input type="text" class="form-control" id="titulo" placeholder="Analista Programador">   
+      </div>
+      <br>
+      <h3>CARGO <span class="badge badge-secondary"></span></h3>
+      <br>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="cargo">Cargo</label>
+          <select id="cargo" class="form-control">
+            <option selected>Selección Cargo</option>
+            <option>Jefe logistica</option>
+            <option></option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="rol">Rol</label>
+          <select id="rol" class="form-control">
+            <option selected>Selección Rol</option>
+            <option>Jefe proyecto</option>
+            <option>Colaborador</option>
+            <option></option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <button type="button" class="btn btn-dark">GUARDAR</button>
+    </form>
+  </div>
+  
+</body>
+</html>
