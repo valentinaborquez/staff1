@@ -11,15 +11,19 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
 import { ReportestaffComponent } from './components/reportestaff/reportestaff.component';
 import { AccesoadminComponent } from './components/accesoadmin/accesoadmin.component';
 import { ListarComponent } from './components/listar/listar.component';
+import { AsignarhabComponent } from './components/asignarhab/asignarhab.component';
+import { AsignaridiomaComponent } from './components/asignaridioma/asignaridioma.component';
 
 const appRoutes: Routes = [
   { path : 'login', component: LoginComponent},
   { path : 'verproyectos', component: VerproyectosComponent},
   { path : 'registrocol', component: RegistrocolComponent},
   { path : 'crearproyectos', component: CrearproyectosComponent},
-  { path : 'habilidaddes', component: HabilidadesComponent},
+  { path : 'habilidades', component: HabilidadesComponent},
   { path : 'reportestaff', component: ReportestaffComponent},
   { path : 'accesoadmin', component: AccesoadminComponent},
+  { path : 'asignarhab', component: AsignarhabComponent},
+  { path : 'asignaridioma', component: AsignaridiomaComponent},
   { path : 'listar', component: ListarComponent},
   { path: '**', redirectTo: 'login' },
   ];
@@ -35,7 +39,9 @@ const appRoutes: Routes = [
     HabilidadesComponent,
     ReportestaffComponent,
     AccesoadminComponent,
-    ListarComponent
+    ListarComponent,
+    AsignarhabComponent,
+    AsignaridiomaComponent
   ],
   imports: [
     RouterModule.forRoot(  appRoutes, {enableTracing: false}),
