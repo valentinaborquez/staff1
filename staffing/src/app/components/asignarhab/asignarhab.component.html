@@ -12,8 +12,28 @@
 		<title>Document</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Menú</a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Colaboradores</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
     
-<br>
 <br>
 <br>
 <br>
@@ -36,18 +56,20 @@
 <br>
 <br>
     
-      <div class="form-group">
-        <label for="idioma">Asignar habilidades técnicas</label>
-        <select class="form-control" id="idioma">
-          <option>JAVA</option>
-          <option>PYTHON</option>
-          <option>LARAVEL</option>
-          <option>ANGULAR</option>
-          <option>SPRINGBOOT</option>
-          <option>C++</option>
-        </select>
-      </div>
-
+<div class="row">
+    <div class="col-md-12">
+  
+      <select class="mdb-select colorful-select dropdown-primary md-form" multiple searchable="Search here..">
+        <option value="" disabled selected>Escoge habilidades técnicas</option>
+        <option value="1">PHP</option>
+        <option value="2">PYTHON</option>
+        <option value="3">JAVA</option>
+        <option value="4">SPRINGBOOT</option>
+        <option value="5">ANGULAR</option>
+      </select>
+  
+    </div>
+  </div>
       <br>
       <br>
       <br>
