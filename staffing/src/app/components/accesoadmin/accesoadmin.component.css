@@ -5,3 +5,7 @@ body{
 .cuadrados{
     margin-top: 50px;
 }
+
+img.center {
+    margin-left: 100px;
+}
