@@ -13,6 +13,7 @@ import { AccesoadminComponent } from './components/accesoadmin/accesoadmin.compo
 import { ListarComponent } from './components/listar/listar.component';
 import { AsignarhabComponent } from './components/asignarhab/asignarhab.component';
 import { DetalleproyectosComponent } from './components/detalleproyectos/detalleproyectos.component';
+import { CreadoComponent } from './components/creado/creado.component';
 
 
 const appRoutes: Routes = [
@@ -25,6 +26,7 @@ const appRoutes: Routes = [
   { path : 'accesoadmin', component: AccesoadminComponent},
   { path : 'asignarhab', component: AsignarhabComponent},
   { path : 'listar', component: ListarComponent},
+  { path : 'creado', component: CreadoComponent},
   { path : 'detalleproyectos', component: DetalleproyectosComponent},
   { path: '**', redirectTo: 'login' },
   ];
@@ -43,6 +45,7 @@ const appRoutes: Routes = [
     ListarComponent,
     DetalleproyectosComponent,
     AsignarhabComponent,
+    CreadoComponent,
     
   ],
   imports: [
