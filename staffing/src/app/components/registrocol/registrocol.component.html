@@ -12,36 +12,46 @@
 		<title>Document</title>
 </head>
 <body>
-  <ul class="nav nav-tabs bg-dark">
-    <li class="nav-item">
-      <a class="nav-link" href="/accesoadmin">Inicio</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Usuarios</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Crear Usuarios</a>
-        <a class="dropdown-item" href="#">Lista Usuarios</a>
-     
-      </div>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Proyectos</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Crear Proyecto</a>
-        <a class="dropdown-item" href="#">Lista Proyecto</a>
-     
-      </div>
-    </li>
-  </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Menú</a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="verproyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registrocol">Colaboradores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reportestaff">Reporte de Staffing</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
 
   <br>
   <br>
 
   <div class="container">
     <form>
-      <h3>REGISTRO <span class="badge badge-secondary"></span></h3>
+      <h3>REGISTRAR COLABORADOR <span class="badge badge-secondary"></span></h3>
       <br>
       <div class="form-row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="form-group">
+              <label for="codigo">Codigo</label>
+              <input type="text" class="form-control" readonly id="codigo" value="0001">
+            </div>    
+
+      </div>
         <div class="form-group col-md-4">
           <label for="nombre">Nombre</label>
           <input type="text" class="form-control" id="nombre" placeholder="Nombre Apellido">
@@ -65,56 +75,9 @@
           <input type="text" class="form-control" id="telefono" placeholder="1234567">
         </div>
       </div>
-     
-      <br>
-
-      <h3>HABILIDADES <span class="badge badge-secondary"></span></h3>
-
-      <div class="form-group">
-        <label for="idioma">Idioma</label>
-        <select class="form-control" id="idioma">
-          <option>Ingles</option>
-          <option>Frances</option>
-          <option>Aleman</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="especialidad">Especialidad</label>
-        <select class="form-control" id="especialidad">
-          <option>JAVA</option>
-          <option>PHP</option>
-          <option>LARAVEL</option>
-          <option>OTROS</option>
-        </select>
-      </div>
-      <div class="form-group"> 
-      <label for="titulo">Titulo</label>
-      <input type="text" class="form-control" id="titulo" placeholder="Analista Programador">   
-      </div>
-      <br>
-      <h3>CARGO <span class="badge badge-secondary"></span></h3>
-      <br>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="cargo">Cargo</label>
-          <select id="cargo" class="form-control">
-            <option selected>Selección Cargo</option>
-            <option>Jefe logistica</option>
-            <option></option>
-          </select>
-        </div>
-        <div class="form-group col-md-6">
-          <label for="rol">Rol</label>
-          <select id="rol" class="form-control">
-            <option selected>Selección Rol</option>
-            <option>Jefe proyecto</option>
-            <option>Colaborador</option>
-            <option></option>
-          </select>
-        </div>
-      </div>
-      <br>
-      <button type="button" class="btn btn-dark">GUARDAR</button>
+     <div>
+      <button type="button" class="btn btn-dark">GUARDAR</button>      
+     </div>
     </form>
   </div>
   
