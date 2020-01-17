@@ -45,38 +45,31 @@
       <h3>REGISTRAR COLABORADOR <span class="badge badge-secondary"></span></h3>
       <br>
       <div class="form-row">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="form-group">
-              <label for="codigo">Codigo</label>
-              <input type="text" class="form-control" readonly id="codigo" value="0001">
-            </div>    
-
-      </div>
         <div class="form-group col-md-4">
           <label for="nombre">Nombre</label>
           <input type="text" class="form-control" id="nombre" placeholder="Nombre Apellido">
         </div>
         <div class="form-group col-md-4">
-          <label for="correo">Correo</label>
-          <input type="mail" class="form-control" id="correo" placeholder="correo@ejemplo.com">
+          <label for="apellido">Apellido</label>
+          <input type="text" class="form-control" id="apellido" placeholder="Apellido">
         </div>
         <div class="form-group col-md-4">
-          <label for="contrasena">Contraseña</label>
-          <input type="password" class="form-control" id="contrasena" placeholder="*********">
+          <label for="correo">Correo</label>
+          <input type="mail" class="form-control" id="correo" placeholder="correo@ejemplo.com">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
-          <label for="direccion">Dirección</label>
-          <input type="text" class="form-control" id="direccion" placeholder="Av calle #1234">
+          <label for="rut">Rut</label>
+          <input type="text" class="form-control" id="rut" placeholder="11.111.111-1">
         </div>
         <div class="form-group col-md-6">
-          <label for="telefono">Telefono</label>
-          <input type="text" class="form-control" id="telefono" placeholder="1234567">
+          <label for="cargo">Cargo</label>
+          <input type="text" class="form-control" id="cargo" placeholder="Jefe de Proyectos">
         </div>
       </div>
      <div>
-      <button type="button" class="btn btn-dark">GUARDAR</button>      
+      <button type="button" class="btn btn-light" (click)='registro()' style=" background-color: black; color: white;">Registrar</button> 
      </div>
     </form>
   </div>
