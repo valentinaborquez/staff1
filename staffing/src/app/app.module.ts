@@ -14,6 +14,7 @@ import { ListarComponent } from './components/listar/listar.component';
 import { AsignarhabComponent } from './components/asignarhab/asignarhab.component';
 import { DetalleproyectosComponent } from './components/detalleproyectos/detalleproyectos.component';
 import { CreadoComponent } from './components/creado/creado.component';
+import { AsignarcolComponent } from './components/asignarcol/asignarcol.component';
 
 
 const appRoutes: Routes = [
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
     DetalleproyectosComponent,
     AsignarhabComponent,
     CreadoComponent,
+    AsignarcolComponent,
     
   ],
   imports: [

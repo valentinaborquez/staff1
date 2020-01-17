@@ -1,11 +1,18 @@
-body{
-    margin-top: 30px;
-}
+
 
 .cuadrados{
     margin-top: 50px;
 }
 
 img.center {
-    margin-left: 100px;
+    margin-left: 140px;
+}
+
+.container{
+    margin-top: 30px;
+}
+
+.card-header{
+    text-align: center;
+
 }
