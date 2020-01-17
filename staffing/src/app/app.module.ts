@@ -14,6 +14,8 @@ import { ListarComponent } from './components/listar/listar.component';
 import { AsignarhabComponent } from './components/asignarhab/asignarhab.component';
 import { DetalleproyectosComponent } from './components/detalleproyectos/detalleproyectos.component';
 import { CreadoComponent } from './components/creado/creado.component';
+import { AsignarcolComponent } from './components/asignarcol/asignarcol.component';
+import { AccesocolComponent } from './components/accesocol/accesocol.component';
 
 
 const appRoutes: Routes = [
@@ -28,6 +30,8 @@ const appRoutes: Routes = [
   { path : 'listar', component: ListarComponent},
   { path : 'creado', component: CreadoComponent},
   { path : 'detalleproyectos', component: DetalleproyectosComponent},
+  { path : 'asignarcol', component: AsignarcolComponent},
+  { path : 'accesocol', component: AccesocolComponent},
   { path: '**', redirectTo: 'login' },
   ];
 
@@ -46,6 +50,8 @@ const appRoutes: Routes = [
     DetalleproyectosComponent,
     AsignarhabComponent,
     CreadoComponent,
+    AsignarcolComponent,
+    AccesocolComponent,
     
   ],
   imports: [
