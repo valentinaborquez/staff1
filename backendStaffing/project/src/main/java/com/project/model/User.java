@@ -1,5 +1,6 @@
 package com.project.model;
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 
 @Entity
 @Table(name= "User")
@@ -10,6 +11,7 @@ public class User {
     private Long id_user;
 
     @Column(name = "email", unique = true, nullable = false)
+    @Email
     private String email;
 
     @Column(name = "password" , nullable = false)
