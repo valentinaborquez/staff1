@@ -13,6 +13,10 @@ import javax.persistence.Table;
 @Entity
 @Table(name= "Administrator")
 public class Administrator {
+    private Long id_administrator;
+    private String name;
+    private String lastname;
+
 
 
 }

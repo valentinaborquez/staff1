@@ -8,8 +8,10 @@ public class User {
     @Column(name = "id_user")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_user;
+
     @Column(name = "email", unique = true, nullable = false)
     private String email;
+
     @Column(name = "password" , nullable = false)
     private String password;
 
