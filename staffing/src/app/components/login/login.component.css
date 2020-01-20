@@ -1,3 +1,27 @@
+.container {
+    margin-top: 2%;
+}
+.remember {
+    margin-left: 1%;
+}
+.card {
+    min-height: 100vh;
+}
+.fondo {
+    min-width: 100%;
+    min-height: 100%;
 
-
-	
+}
+.nopadding{
+    padding: 0%;
+}
+.all-content {
+        margin: 0px;
+}
+.title-login {
+    color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card-header {
+    background-color: white;
+}

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RegistroService } from './../../services/registro.service';
+import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-asignarhab',
@@ -6,10 +9,44 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./asignarhab.component.css']
 })
 export class AsignarhabComponent implements OnInit {
-
-  constructor() { }
+  private hablidades: any;
+  constructor(
+    private registroService: RegistroService,
+    private router : Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  setHabilidades(value: any) {
+    this.hablidades = value.value;
+  }
+
+  asignar() {
+    if(this.registroService.asignar(this.hablidades)) {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 4000,
+        timerProgressBar: true,
+        onOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Se ha asignado correctamente.'
+      });
+      this.router.navigate(['index/accesoadmin']);
+    };
+    
+  }
+  volver(){
+    
+
   }
 
 }

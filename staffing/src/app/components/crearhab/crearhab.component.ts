@@ -1,21 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-reportestaff',
-  templateUrl: './reportestaff.component.html',
-  styleUrls: ['./reportestaff.component.css']
+  selector: 'app-crearhab',
+  templateUrl: './crearhab.component.html',
+  styleUrls: ['./crearhab.component.css']
 })
-export class ReportestaffComponent implements OnInit {
+export class CrearhabComponent implements OnInit {
 
   constructor(
-    private router : Router
+    
+    private router: Router
   ) { }
 
   ngOnInit() {
   }
-  asignar() {
+  guardarhab(){
     const Toast = Swal.mixin({
       toast: true,
       position: 'top-end',
@@ -27,12 +28,11 @@ export class ReportestaffComponent implements OnInit {
         toast.addEventListener('mouseleave', Swal.resumeTimer)
       }
     })
-          
-      Toast.fire({
-        icon: 'success',
-        title: 'Se ha asignado correctamente.'
-      });
-      this.router.navigate(['index/accesoadmin']);
-    };
-
+    
+    Toast.fire({
+      icon: 'success',
+      title: 'Se ha guardado correctamente'
+    });
+    this.router.navigate(['index/accesoadmin']);
+  }
 }

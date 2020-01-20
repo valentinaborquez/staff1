@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<title>Document</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Menú</a>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="verproyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registrocol">Colaboradores</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="reportestaff">Reporte de Staffing</a>
-              </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-            <button type="submit" class="btn btn-outline-primary">Buscar</button>
-          </form>
-        </div>
-      </nav>
 
-  <br>
-  <br>
 
   <div class="container">
     <form>
@@ -47,25 +7,25 @@
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="nombre">Nombre</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Nombre Apellido">
+          <input type="text" [value]="nombre" (keyup)="setNombre($event.target.value)" class="form-control" id="nombre" placeholder="Nombre Apellido">
         </div>
         <div class="form-group col-md-4">
           <label for="apellido">Apellido</label>
-          <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+          <input type="text" [value]="apellido" (keyup)="setApellido($event.target.value)" class="form-control" id="apellido" placeholder="Apellido">
         </div>
         <div class="form-group col-md-4">
           <label for="correo">Correo</label>
-          <input type="mail" class="form-control" id="correo" placeholder="correo@ejemplo.com">
+          <input type="mail" [value]="correo" (keyup)="setCorreo($event.target.value)" class="form-control" id="correo" placeholder="correo@ejemplo.com">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="rut">Rut</label>
-          <input type="text" class="form-control" id="rut" placeholder="11.111.111-1">
+          <input type="text" [value]="rut" (keyup)="setRut($event.target.value)" class="form-control" id="rut" placeholder="11.111.111-1">
         </div>
         <div class="form-group col-md-6">
           <label for="cargo">Cargo</label>
-          <input type="text" class="form-control" id="cargo" placeholder="Jefe de Proyectos">
+          <input type="text" [value]="cargo" (keyup)="setCargo($event.target.value)" class="form-control" id="cargo" placeholder="Jefe de Proyectos">
         </div>
       </div>
 
@@ -73,16 +33,15 @@
 
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <button type="button" class="btn btn-dark"  >REGISTRAR</button> 
+          <button type="button" (click)="registro()" class="btn btn-dark"  >REGISTRAR</button> 
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        
+        <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <button type="button" class="btn btn-dark"  onclick="window.location.href='asignarhab'" >ASIGNAR HABILIDADES TECNICAS</button> 
           
-        </div>
+        </div> -->
       </div>
 
     </form>
   </div>
   
-</body>
-</html>
