@@ -17,7 +17,8 @@ const sideRoutes: Routes = [{
 	path: '', component: LayoutComponent, children: [
 	{	path: 'accesoadmin',component: AccesoadminComponent }, // Aquí van las rutas con layout
     {   path: 'verproyectos', component: VerproyectosComponent },
-  	{	path: 'registrocol', component: RegistrocolComponent },
+	{	path: 'registrocol', component: RegistrocolComponent },
+	{	path: 'accesocol', component: AccesocolComponent },
   	{	path: 'crearproyectos', component: CrearproyectosComponent },
   	{   path: 'reportestaff', component: ReportestaffComponent },
   	{	path: 'accesoadmin', component: AccesoadminComponent },

@@ -12,7 +12,7 @@ import { CrearhabComponent } from './../../components/crearhab/crearhab.componen
 import { RegistrocolComponent } from './../../components/registrocol/registrocol.component';
 import { ReportestaffComponent } from './../../components/reportestaff/reportestaff.component';
 import { VerproyectosComponent } from './../../components/verproyectos/verproyectos.component';
-
+import {DataTablesModule} from 'angular-datatables';
 
 @NgModule({
     declarations: [
@@ -30,6 +30,7 @@ import { VerproyectosComponent } from './../../components/verproyectos/verproyec
     ],
     imports: [
       CommonModule,
+      DataTablesModule,
       LayoutRoutingModule,
     ]
   })
