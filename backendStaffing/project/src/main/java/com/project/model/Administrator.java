@@ -17,10 +17,14 @@ public class Administrator {
     @Column(name = "id_persona")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_administrator;
+
     @Column(name = "name", nullable = false)
     private String name;
+
     @Column(name = "lastName", nullable = false)
     private String lastname;
+
+
     @OneToOne
     @JoinColumn(name = "id_user", updatable = false, nullable = false)
     private User user;

@@ -17,10 +17,10 @@ public class User {
     @Column(name = "password" , nullable = false)
     private String password;
 
-    @OneToOne(mappedBy = "login", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Administrator administrator;
 
-    @OneToOne(mappedBy = "login", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Collaborator collaborator;
 
     public long getId_user() {

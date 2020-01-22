@@ -1,4 +1,4 @@
 package com.project.model;
 
-public class Project_Skills {
+public class ProjectSkills {
 }

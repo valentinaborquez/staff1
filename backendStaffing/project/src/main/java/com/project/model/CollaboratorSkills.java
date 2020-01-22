@@ -1,9 +1,14 @@
 package com.project.model;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
-public class Collaborator_Skills {
+public class CollaboratorSkills {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID_COLL_SKILL" , nullable = false)
+    private Long id_CS;
+
     @OneToOne
     @JoinColumn(name = "id_skill", updatable = false, nullable = false)
     private Skills skills;
