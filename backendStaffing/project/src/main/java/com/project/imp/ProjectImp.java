@@ -21,5 +21,10 @@ public class ProjectImp implements IProjectService {
     public ResProjectDto guardarProject(ReqProjectDto reqProjectDtoDto) throws Exception {
         return null;
     }
+
+    @Override
+    public boolean eliminar(String nameProject) throws Exception {
+        return false;
+    }
 }
 

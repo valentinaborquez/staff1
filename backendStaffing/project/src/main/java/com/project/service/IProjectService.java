@@ -8,5 +8,5 @@ public interface IProjectService {
 
     List<Project> listarProject()throws Exception;
     ResProjectDto guardarProject(ReqProjectDto reqProjectDtoDto) throws Exception;
-
+    boolean eliminar(String nameProject) throws Exception;
 }
