@@ -1,6 +1,6 @@
 package com.project.dto;
 
-public class ProjectDto {
+public class ReqProjectDto {
 
 
 }
