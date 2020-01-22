@@ -59,19 +59,11 @@ public class Collaborator {
 
     public void setProjectCollaborators(List<ProjectCollaborator> projectCollaborators) {  this.projectCollaborators = projectCollaborators;  }
 
-    public List<CollaboratorSkills> getCollaboratorSkills() {
-        return collaboratorSkills;
-    }
+    public List<CollaboratorSkills> getCollaboratorSkills() {return collaboratorSkills;  }
 
-    public void setCollaboratorSkills(List<CollaboratorSkills> collaboratorSkills) {
-        this.collaboratorSkills = collaboratorSkills;
-    }
+    public void setCollaboratorSkills(List<CollaboratorSkills> collaboratorSkills) { this.collaboratorSkills = collaboratorSkills;  }
 
-    public User getUser() {
-        return user;
-    }
+    public User getUser() { return user;  }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
+    public void setUser(User user) {  this.user = user;   }
 }
