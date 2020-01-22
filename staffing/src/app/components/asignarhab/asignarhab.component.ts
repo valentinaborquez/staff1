@@ -38,7 +38,7 @@ export class AsignarhabComponent implements OnInit {
       
       Toast.fire({
         icon: 'success',
-        title: 'Se ha asignado correctamente.'
+        title: 'Las habilidades se han asignado correctamente.'
       });
       this.router.navigate(['index/accesoadmin']);
     };

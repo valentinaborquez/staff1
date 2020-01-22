@@ -1,0 +1,15 @@
+.container {
+    margin-top: 2%;
+}
+.fondo {
+    min-width: 100%;
+    min-height: 100%;
+
+}
+.nopadding{
+    padding: 0%;
+}
+.menucol-content {
+        margin: 0px;
+        margin-right: 0px;
+}

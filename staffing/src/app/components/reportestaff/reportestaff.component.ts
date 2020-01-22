@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, Renderer2} from '@angular/core';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-reportestaff',
@@ -8,13 +10,118 @@ import Swal from 'sweetalert2';
   styleUrls: ['./reportestaff.component.css']
 })
 export class ReportestaffComponent implements OnInit {
-
+  private dtoptions: any = {};
   constructor(
     private router : Router
   ) { }
 
   ngOnInit() {
+    var data = [
+      [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ],
+        [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "<button>asdasdas</button>"
+        ],
+        [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ],
+        [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ],
+        [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ],
+
+        [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ],
+        [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ],
+        [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ],
+        [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ],
+        [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ], [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ],
+        [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ],
+         [
+          "Tiger Nixon",
+          "System Architect",
+          "Edinburgh",
+          "5421",
+          "2011/04/25"
+        ],
+      [
+          "Garrett Winters",
+          "Director",
+          "Edinburgh",
+          "8422",
+          "2011/07/25"
+      ]
+  ]
+  this.dtoptions = {
+    data: data
+  }  
+
   }
+
   asignar() {
     const Toast = Swal.mixin({
       toast: true,

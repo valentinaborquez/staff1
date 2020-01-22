@@ -1,71 +1,24 @@
-
-    
-
-  <br>
-  <br>
   <div class="container">
     <h2>Proyectos</h2>
     <br>
-    <table class="table table-dark">
-        <thead>
-          <tr>
-            <th scope="col">Código</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Estado</th>
-            <th scope="col">Descripción</th>
-            <th scope="col">Colaboradores</th>
-            <th scope="col">Opciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">0001</th>
-            <td>Empresa Coca-Cola</td>
-            <td>Activo</td>
-            <td>Página web Coca-Cola</td>
-            <td>Marcelo Lagos <br> Claudia Reyes <br> Priscilla Palomo</td>
-            <td>
-                <button type="button" href="#" class="btn btn-primary btn-sm">Editar</button>
-                | 
-                <button type="button" class="btn btn-light btn-sm">Eliminar</button></td>
-                |
-                <button type="button" [routerLink]="['../asignarcol']" class="btn btn-primary btn-sm">Añadir colaborador</button>
-          </tr>
-      
-          <tr>
-            <th scope="row">0002</th>
-            <td>Daily Fresh/td>
-            <td>Activo</td>
-            <td>Creación de compra online</td>
-            <td>Camila Farias <br> Millena Trincado <br> Valentina Borquez</td>
-            <td>
-                <button type="button" class="btn btn-primary btn-sm">Editar</button>
-                | 
-                <button type="button" class="btn btn-light btn-sm">Eliminar</button></td>
-                |
-                <button type="button" [routerLink]="['../asignarcol']" class="btn btn-primary btn-sm">Añadir colaborador</button>
-          </tr>
-          <tr>
-            <th scope="row">0003</th>
-            <td>Spa Vital</td>
-            <td>Pendiente</td>
-            <td>Página web interna</td>
-            <td>Noemi Gomez <br> Libertad Herrera <br> Denisse Carvajal</td>
-            <td>
-                <button type="button" class="btn btn-primary btn-sm">Editar</button>
-                | 
-                <button type="button" class="btn btn-light btn-sm">Eliminar</button></td>
-                |
-                <button type="button" [routerLink]="['../asignarcol']" class="btn btn-primary btn-sm">Añadir colaborador</button>
-          </tr>
-       </tbody>
-        
-    </table>
-      <br>
- 
-      <br>
-      <br>
-      <br>
-      <br>
+    <div class="container">
+      <form>
+          <table  [id] = '"tablaproyectos"' datatable [dtOptions]='dtoptions' class="table table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre del proyecto</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Colaboradores</th>
+                  <th scope="col">Estado</th>    
+                  <th scope="col">Fecha de inicio</th>
+                  <th scope="col">Fecha de término</th>                        
+                </tr>
+              </thead>
+              <tbody>
+           
+              </tbody>
+            </table>
+        </form>    
   </div>
-   
+  
+  

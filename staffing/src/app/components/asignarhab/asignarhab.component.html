@@ -1,20 +1,8 @@
 
-<div class="container">
-<form>
+
   
 <h3>ASIGNAR HABILIDADES TÉCNICAS<span class="badge badge-secondary"></span></h3>
 <br>
-<!-- <div class="form-group">
-  <label for="sel1">Seleccionar colaboradores</label>
-  <select class="form-control" id="sel1">
-    <option>Millena</option>
-    <option>Camila</option>
-    <option>Valentina</option>
-    <option>Denisse</option>
-  </select>
-</div> -->
-  <br>
-<div class="container">
 <form>
 <div class="form-group">
   <br>
@@ -28,12 +16,12 @@
   </select>
 </div>
 </form>
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <button type="button" (click)="asignar()" class="btn btn-dark">GUARDAR</button> 
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <button type="button" [routerLink]="['../asignarcol']" class="btn btn-dark">AÑADIR COLABORADOR</button> 
+    
+  </div>
 </div>
-  <br>
-  <br>
-  <br>
-    <button type="button" (click)="asignar()" class="btn btn-dark" >ASIGNAR</button> 
-    <button type="button" (click)="volver()" class="btn btn-dark"  >VOLVER</button> 
-<br>
-<br>
-

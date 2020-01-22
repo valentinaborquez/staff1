@@ -13,6 +13,16 @@
       </select>
     </div>
       <br>
-      <button type="button" (click)="asignar()" class="btn btn-dark" >ASIGNAR</button> 
+      <div class="row">
 
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <button type="button" (click)="asignar()" class="btn btn-dark" >ASIGNAR</button>
+        </div>
+        <br>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <button type="button2" [routerLink]="['../crearproyectos']" class="btn btn-dark">VOLVER</button> 
+          </div>
+      </div>
+      
 </div>
+
