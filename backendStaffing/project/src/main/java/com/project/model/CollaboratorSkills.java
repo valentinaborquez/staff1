@@ -9,11 +9,11 @@ public class CollaboratorSkills {
     @Column(name = "ID_COLL_SKILL" , nullable = false)
     private Long id_CS;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "id_skill", updatable = false, nullable = false)
     private Skills skills;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "id_collaborator", updatable = false, nullable = false)
     private Collaborator collaborator;
 
