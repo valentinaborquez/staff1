@@ -11,7 +11,9 @@ public class Skills {
     private Long id_skill;
     @Column(name = "name")
     private String name;
-    
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "skill")
+    private List<Collaborator_Skills> collaboratorSkillsList;
 
 
 
