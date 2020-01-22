@@ -3,7 +3,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 
 @Entity
-@Table(name= "User")
+@Table(name= "USERS")
 public class User {
     @Id
     @Column(name = "id_user")
@@ -16,6 +16,12 @@ public class User {
 
     @Column(name = "password" , nullable = false)
     private String password;
+
+    @OneToOne(mappedBy = "login", cascade = CascadeType.ALL)
+    private Administrator administrator;
+
+    @OneToOne(mappedBy = "login", cascade = CascadeType.ALL)
+    private Collaborator collaborator;
 
     public long getId_user() {
         return id_user;
@@ -41,6 +47,11 @@ public class User {
         this.password = password;
     }
 
+    public Administrator getAdministrator() {  return administrator;   }
 
+    public void setAdministrator(Administrator administrator) {  this.administrator = administrator;  }
 
+    public Collaborator getCollaborator() {  return collaborator;  }
+
+    public void setCollaborator(Collaborator collaborator) {  this.collaborator = collaborator;  }
 }

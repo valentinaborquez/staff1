@@ -2,8 +2,9 @@ package com.project.service;
 
 import com.project.model.User;
 
-public interface IUserService {
-    User saveUser(User objUser);
-    User findById(Long objId);
+import java.util.List;
 
+public interface IUserService {
+    User saveUser(User objUser) throws Exception;
+    User findById(Long objId) throws Exception;
 }
