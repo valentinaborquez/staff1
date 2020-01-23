@@ -1,10 +1,9 @@
 package com.project.imp;
 
 import com.project.dto.ReqProjectDto;
-import com.project.dto.ResProjectDto;
+import com.project.dto.ResponseProjectDto;
 import com.project.model.Project;
 import com.project.service.IProjectService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,7 +17,7 @@ public class ProjectImp implements IProjectService {
     }
 
     @Override
-    public ResProjectDto guardarProject(ReqProjectDto reqProjectDtoDto) throws Exception {
+    public ResponseProjectDto guardarProject(ReqProjectDto reqProjectDtoDto) throws Exception {
         return null;
     }
 

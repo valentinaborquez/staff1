@@ -5,7 +5,7 @@ import com.project.model.ProjectSkills;
 
 import java.util.List;
 
-public class ResProjectDto {
+public class ResponseProjectDto {
 
     private Long id_projectDto;
     private String nameDto;
