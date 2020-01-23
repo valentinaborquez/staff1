@@ -11,6 +11,7 @@ import * as $ from 'jquery';
 })
 export class ReportestaffComponent implements OnInit {
   private dtoptions: any = {};
+  show: boolean = true;
   constructor(
     private router : Router
   ) { }
@@ -21,8 +22,8 @@ export class ReportestaffComponent implements OnInit {
           "Tiger Nixon",
           "System Architect",
           "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "asjf",
+          "libre"
         ],
         [
           "Tiger Nixon",
@@ -36,7 +37,7 @@ export class ReportestaffComponent implements OnInit {
           "System Architect",
           "Edinburgh",
           "5421",
-          "2011/04/25"
+          "asignado"
         ],
         [
           "Tiger Nixon",

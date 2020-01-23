@@ -8,7 +8,7 @@ export class RegistroService {
   constructor() { }
 
   // Registro usuario
-  registro(nombre:string, apellido:string, correo:string, rut:string, cargo:string ){
+  registro(nombre:string, apellido:string, correo:string, rut:string, contrasena:string, cargo:string ){
     return true;
   }
   // Asignar habilidades usuarios

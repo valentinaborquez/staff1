@@ -30,9 +30,9 @@ export class CrearproyectosComponent implements OnInit {
         
         Toast.fire({
           icon: 'success',
-          title: 'Se ha creado correctamente, por favor asigne habilidades'
+          title: 'Se ha creado correctamente, por favor asigne colaboradores'
         });
-        this.router.navigate(['index/asignarhab']);
+        this.router.navigate(['index/asignarcol']);
  
 
       }

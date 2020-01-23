@@ -19,6 +19,7 @@ export class VerproyectosComponent implements OnInit {
           "Proyecto JAVA-ANGULAR",
           "Akjf",
           "2345",
+          "hgfj",
           "2345",
           "2011/04/25"
         ],
@@ -26,6 +27,7 @@ export class VerproyectosComponent implements OnInit {
           "Proyecto2",
           "Proyecto JSON-ANGULAR",
           "DFGFHJ",
+          "sadfghj",
           "ACTIVO",
           "12345",
           "567/04/25"

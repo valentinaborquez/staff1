@@ -14,6 +14,7 @@ export class RegistrocolComponent implements OnInit {
   private apellido: string = '';
   private correo: string = '';
   private rut: string = '';
+  private contrasena: string = '';
   private cargo: string = '';
 
   constructor(
@@ -25,13 +26,14 @@ export class RegistrocolComponent implements OnInit {
   }
 
   registro(){
-    if(this.nombre !== '' && this.apellido !== '' && this.correo !== '' && this.rut !== '' && this.cargo !== '') {
+    if(this.nombre !== '' && this.apellido !== '' && this.correo !== '' && this.rut !== '' && this.contrasena !== '' && this.cargo !== '') {
       this.nombre = "";
       this.apellido = "";
       this.correo = "";
       this.rut = "";
+      this.contrasena = "";
       this.cargo = "";
-      let registro = this.registroService.registro(this.nombre, this.apellido, this.correo, this.rut, this.cargo);
+      let registro = this.registroService.registro(this.nombre, this.apellido, this.correo, this.rut, this.contrasena, this.cargo);
       if(registro){
         const Toast = Swal.mixin({
           toast: true,
@@ -90,8 +92,13 @@ export class RegistrocolComponent implements OnInit {
     this.cargo  = value;
 
   }
+  setContrasena(value: any) {
+    this.contrasena = value;
+
+  }
   setRut(value: any) {
     this.rut = value;
 
   }
+  
 }
