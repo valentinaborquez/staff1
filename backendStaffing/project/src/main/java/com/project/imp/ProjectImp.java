@@ -11,19 +11,20 @@ import java.util.List;
 @Service
 public class ProjectImp implements IProjectService {
 
+
     @Override
-    public List<Project> listarProject() throws Exception {
+    public List<Project> listProject() throws Exception {
         return null;
     }
 
     @Override
-    public ResponseProjectDto guardarProject(ReqProjectDto reqProjectDtoDto) throws Exception {
+    public ResponseProjectDto saveProject(ReqProjectDto reqProjectDtoDto) throws Exception {
         return null;
     }
 
     @Override
-    public boolean eliminar(String nameProject) throws Exception {
-        return false;
+    public Project searchByName(String name) throws Exception {
+        return null;
     }
 }
 
