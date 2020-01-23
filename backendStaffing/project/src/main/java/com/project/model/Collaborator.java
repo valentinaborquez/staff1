@@ -35,6 +35,9 @@ public class Collaborator {
     @JoinColumn(name = "id_user", updatable = false, nullable = false)
     private User user;
 
+    @Column(name = "asignado")
+    private byte asignado;
+
     public Long getId_collaborator() { return id_collaborator;   }
 
     public void setId_collaborator(Long id_collaborator) { this.id_collaborator = id_collaborator;  }

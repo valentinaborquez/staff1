@@ -15,5 +15,6 @@ public class ReqCollaboratorDto {
     private List<ProjectCollaborator> projectCollaboratorsDto;
     private List<CollaboratorSkills> collaboratorSkillsDto;
     private User userDto;
+    private byte asignadoDto;
 
 }
