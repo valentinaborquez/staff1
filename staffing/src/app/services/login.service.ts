@@ -10,7 +10,12 @@ export class LoginService {
   // Esto hace la lógica del login
   login(user: string, pass: string) {
     //Acá se debe conectar con el backed
-    if(user == "vale" && pass=="123") {
+    if(user == "admin" && pass=="123") {
+      return true;
+    } else {
+      return false;
+    }
+    if(user == "colab" && pass=="123") {
       return true;
     } else {
       return false;
