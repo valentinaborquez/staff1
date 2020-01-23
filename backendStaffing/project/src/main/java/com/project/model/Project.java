@@ -27,8 +27,6 @@ public class Project {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private String end_date;
 
-    @Column(name = "status")
-    private byte status;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "project")
     private List<ProjectCollaborator> projectCollaborators;
@@ -76,13 +74,6 @@ public class Project {
         this.end_date = end_date;
     }
 
-    public byte getStatus() {
-        return status;
-    }
-
-    public void setStatus(byte status) {
-        this.status = status;
-    }
 
     public List<ProjectCollaborator> getProjectCollaborators() {
         return projectCollaborators;
