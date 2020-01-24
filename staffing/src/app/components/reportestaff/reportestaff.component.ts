@@ -28,59 +28,59 @@ export class ReportestaffComponent implements OnInit {
         [
           "Priscilla Palomo",
           "19.756.375-2",
-          "Edinburgh",
-          "5421",
-          "<button>asdasdas</button>"
+          "priscillagit@hotmail.com",
+          "Java, angular",
+          "Asignado"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "asignado"
+          "Denisse Carvajal",
+          "18.563.268-2",
+          "Java",
+          "denisse68@outlook.com",
+          "Asignado"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Felipe Farias",
+          "16.987.174-4",
+          "Laravel, c++",
+          "felippe@hotmail.com",
+          "Asignado"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Nicole Saavedra",
+          "17.986.774-2",
+          "Java, Python, Angular",
+          "nicsaa@gmail.com",
+          "Libre"
         ],
 
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Matias Segura",
+          "20.988.665-2",
+          "Java, C++",
+          "MatInfo@gmai.com",
+          "Libre"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Libertad Herrera",
+          "20.876.236-9",
+          "Angular",
+          "Libee@gmail.com",
+          "Asignado"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Camila Gomez",
+          "20.167.976-k",
+          "Java",
+          "Cami123@gmail.com",
+          "Libre"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Juan Sepulveda",
+          "19.765.467-2",
+          "Java, angular, python",
+          "sepu134@hotmail.com",
+          "Libre"
         ],
         [
           "Robert Lopez",
