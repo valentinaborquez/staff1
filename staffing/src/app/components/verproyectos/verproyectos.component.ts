@@ -16,21 +16,57 @@ export class VerproyectosComponent implements OnInit {
     var data = [
       [
           "Proyecto1",
-          "Proyecto JAVA-ANGULAR",
-          "Akjf",
-          "2345",
-          "hgfj",
-          "2345",
-          "2011/04/25"
+          "Proyecto Empresa Daily",
+          "Noemi Gomez, Camila Farias",
+          "Java-Angular",
+          "Activo",
+          "01-01-2020",
+          "07-03-2020"
         ],
         [
           "Proyecto2",
-          "Proyecto JSON-ANGULAR",
-          "DFGFHJ",
-          "sadfghj",
-          "ACTIVO",
-          "12345",
-          "567/04/25"
+          "Proyecto Página web Forge",
+          "Valentina Borquez, Millena Trincado",
+          "JSON-ANGULAR",
+          "Activo",
+          "04-01-2020",
+          "04-02-2020"
+        ],
+        [
+          "Proyecto3",
+          "Proyecto Página web Forge",
+          "Valentina Borquez, Millena Trincado",
+          "JSON-ANGULAR",
+          "Activo",
+          "04-01-2020",
+          "04-02-2020"
+        ],
+        [
+          "Proyecto4",
+          "Proyecto Página web FALABELLA",
+          "Denisse Carvajal, Priscilla Palomo",
+          "JSON-ANGULAR-JAVA",
+          "Finalizado",
+          "04-10-2019",
+          "04-01-2020"
+        ],
+        [
+          "Proyecto5",
+          "Proyecto Página web RIPLEY",
+          "Felipe Cortez, Rodrigo Farias",
+          "JAVA",
+          "Finalizado",
+          "01-11-2019",
+          "01-01-2020"
+        ],
+        [
+          "Proyecto6",
+          "Proyecto Banco Estado",
+          "Libertad Herrera, Pedro Gonzales",
+          "JAVA-ANGULAR",
+          "Finalizado",
+          "05-07-2019",
+          "01-12-2020"
         ]
   ]
   this.dtoptions = {

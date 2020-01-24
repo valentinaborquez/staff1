@@ -20,14 +20,14 @@ export class ReportestaffComponent implements OnInit {
     var data = [
       [
           "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "asjf",
+          "20.134.775-0",
+          "tiger@gmail.com",
+          "Java, angular, python, c++",
           "libre"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
+          "Priscilla Palomo",
+          "19.756.375-2",
           "Edinburgh",
           "5421",
           "<button>asdasdas</button>"
@@ -83,38 +83,38 @@ export class ReportestaffComponent implements OnInit {
           "2011/04/25"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Robert Lopez",
+          "15.988.657-3",
+          "robertlop@gmail.com",
+          "11.998.564-3",
+          "Libre"
         ], [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Angie Pall",
+          "12.677.998-2",
+          "angie98@gmail.com",
+          "C++, Java",
+          "Asignado"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Maria Cortes",
+          "15.788.456-2",
+          "mari11@gmail.com",
+          "Python, Laravel",
+          "Libre"
         ],
          [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Camila Farias",
+          "18.233.776-0",
+          "cami@gmail.com",
+          "Javascript, angular",
+          "Asignado"
         ],
       [
-          "Garrett Winters",
-          "Director",
-          "Edinburgh",
-          "8422",
-          "2011/07/25"
+          "Noemi Winters",
+          "20.177.887-4",
+          "noemi.contact@gmail.com",
+          "Java, Angular, Javascript ",
+          "Libre"
       ]
   ]
   this.dtoptions = {
