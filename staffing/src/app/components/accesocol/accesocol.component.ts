@@ -13,103 +13,62 @@ export class AccesocolComponent implements OnInit {
   ngOnInit() {
     var data = [
       [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Proyecto Daily",
+          "Daily Fresh Pag web Java",
+          "01-12-2020",
+          "01-24-2020",
+          "Finalizado"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "<button>asdasdas</button>"
+          "Proyecto Banco Estado",
+          "Pag web Angular Full",
+          "02-13-2019",
+          "03-15-2019",
+          "Finalizado"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Proyecto Rush",
+          "DDBB Springboot",
+          "02-05-2019",
+          "07-06-2019",
+          "Finalizado"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Proyecto Wom",
+          "Registro usuario",
+          "01-08-2019",
+          "09-10-2019",
+          "Finalizado"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Proyecto Falabella",
+          "Inventario compras",
+          "07-09-2019",
+          "15-11-2019",
+          "Finalizado"
         ],
 
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Proyecto Santander",
+          "Sistema interno",
+          "04-11-2019",
+          "10-12-2019",
+          "Finalizado"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
+          "Proyecto Luckas",
+          "Staffing Interno",
+          "10-11-2018",
+          "09-12-2018",
+          "Finalizado"
         ],
         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
-        ],
-        [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
-        ],
-        [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
-        ], [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
-        ],
-        [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
-        ],
-         [
-          "Tiger Nixon",
-          "System Architect",
-          "Edinburgh",
-          "5421",
-          "2011/04/25"
-        ],
-      [
-          "Garrett Winters",
-          "Director",
-          "Edinburgh",
-          "8422",
-          "2011/07/25"
-      ]
+          "Proyecto Movilh",
+          "Pagina web",
+          "29-12-2019",
+          "29-01-2020",
+          "Activo"
+        ]
   ]
   this.dtoptions = {
     data: data
