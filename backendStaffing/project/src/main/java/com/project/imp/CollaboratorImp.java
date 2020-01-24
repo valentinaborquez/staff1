@@ -5,21 +5,28 @@ import com.project.dto.ResponseCollaboratorDto;
 import com.project.dto.ResponseUserDto;
 import com.project.model.Collaborator;
 import com.project.service.ICollaboratorService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CollaboratorImp implements ICollaboratorService {
 
       @Override
     public ResponseCollaboratorDto saveCollaborator(ReqCollaboratorDto objReqCollaboratorDto) throws Exception {
-          ResponseCollaboratorDto objResponseCollaboratorDto;
+          /*ResponseCollaboratorDto objResponseCollaboratorDto;
           Collaborator objCollaboratorName;
           Collaborator objCollaboratorLastName;
           Collaborator objCollaboratorDni;
           Collaborator objCollaboratorPosition;
-          ResponseUserDto objResponseUserDto;
+          ResponseUserDto objResponseUserDto;*/
 
+          try {
 
+          }catch (Exception ex){
+              ex.printStackTrace();
+
+          }
           return null;
     }
 

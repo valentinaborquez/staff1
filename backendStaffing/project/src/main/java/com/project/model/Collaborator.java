@@ -11,7 +11,7 @@ public class Collaborator {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_collaborator")
-    private Long id_collaborator;
+    private Long id;
 
     @Column(name = "name")
     private String name;
@@ -25,10 +25,10 @@ public class Collaborator {
     @Column(name = "position")
     private String position;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "skill")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "collaborator")
     private List<ProjectCollaborator> projectCollaborators;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "skill")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "collaborator")
     private List<CollaboratorSkills> collaboratorSkills;
 
     @OneToOne
@@ -38,9 +38,9 @@ public class Collaborator {
     @Column(name = "asignado")
     private byte asignado;
 
-    public Long getId_collaborator() { return id_collaborator;   }
+    public Long getId() { return id;   }
 
-    public void setId_collaborator(Long id_collaborator) { this.id_collaborator = id_collaborator;  }
+    public void setId(Long id) { this.id = id;  }
 
     public String getName() { return name;  }
 

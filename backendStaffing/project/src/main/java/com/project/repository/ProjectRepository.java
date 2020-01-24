@@ -10,9 +10,8 @@ import java.util.List;
 import java.util.Optional;
 
 
-    @Repository
-    public interface ProjectRepository extends JpaRepository<Project, Long> {
-        @Query (("SELECT * FROM STUDENTS s WHERE s.name = :name"))
-        List<Project> findByName(@Param("name")  String name);
-    }
+@Repository
+public interface ProjectRepository extends JpaRepository<Project, Long> {
+   
+}
 

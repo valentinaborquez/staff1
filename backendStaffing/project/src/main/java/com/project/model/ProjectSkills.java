@@ -3,7 +3,7 @@ package com.project.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "PROJECTS_SKILLS")
+@Table(name = "project_skills")
 public class ProjectSkills {
 
     @Id

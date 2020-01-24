@@ -14,10 +14,10 @@ public class Skills {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "skill")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "skills")
     private List<CollaboratorSkills> collaboratorSkills;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "skill")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "skills")
     private List<ProjectSkills> projectSkills;
 
 

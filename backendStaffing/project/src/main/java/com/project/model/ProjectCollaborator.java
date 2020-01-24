@@ -2,6 +2,8 @@ package com.project.model;
 
 import javax.persistence.*;
 
+@Entity
+@Table(name = "project_collaborator")
 public class ProjectCollaborator {
 
     @Id

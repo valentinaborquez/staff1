@@ -19,30 +19,14 @@ public class ProjectImp implements IProjectService {
         return null;
     }
 
-
+    @Override
+    public ResponseProjectDto saveProject(ReqProjectDto reqProjectDtoDto) throws Exception {
+        return null;
+    }
 
     @Override
     public Project searchByName(String name) throws Exception {
         return null;
-    }
-    @Autowired
-    public ResponseProjectDto saveProject (ReqProjectDto reqProjectDto ) throws Exception{
-
-        ResponseProjectDto ResponseProjectDtoDto,
-
-                reqProjectDtoDto = new reqProjectDtoDto,
-
-        reqProjectDtoDto.setNameDto(nameDto);
-
-        reqProjectDtoDto.setDescriptionDto(descriptionDto);
-
-
-        Return responseProjectDtoDto:
-    }
-
-
-
-
     }
 }
 
