@@ -35,51 +35,51 @@ export class ReportestaffComponent implements OnInit {
         [
           "Denisse Carvajal",
           "18.563.268-2",
-          "Java",
           "denisse68@outlook.com",
+          "Java",
           "Asignado"
         ],
         [
           "Felipe Farias",
           "16.987.174-4",
-          "Laravel, c++",
           "felippe@hotmail.com",
+          "Laravel, c++",
           "Asignado"
         ],
         [
           "Nicole Saavedra",
           "17.986.774-2",
-          "Java, Python, Angular",
           "nicsaa@gmail.com",
+          "Java, Python, Angular",
           "Libre"
         ],
 
         [
           "Matias Segura",
           "20.988.665-2",
-          "Java, C++",
           "MatInfo@gmai.com",
+          "Java, C++",
           "Libre"
         ],
         [
           "Libertad Herrera",
           "20.876.236-9",
-          "Angular",
           "Libee@gmail.com",
+          "Angular",
           "Asignado"
         ],
         [
           "Camila Gomez",
           "20.167.976-k",
-          "Java",
           "Cami123@gmail.com",
+          "Java",
           "Libre"
         ],
         [
           "Juan Sepulveda",
           "19.765.467-2",
-          "Java, angular, python",
           "sepu134@hotmail.com",
+          "Java, angular, python",
           "Libre"
         ],
         [
