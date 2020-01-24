@@ -6,6 +6,8 @@ import com.project.dto.ResponseUserDto;
 import com.project.model.Collaborator;
 import com.project.service.ICollaboratorService;
 
+import java.util.List;
+
 public class CollaboratorImp implements ICollaboratorService {
 
       @Override
@@ -23,6 +25,16 @@ public class CollaboratorImp implements ICollaboratorService {
 
     @Override
     public Collaborator findByAsignado(byte asignado) throws Exception {
+        return null;
+    }
+
+    @Override
+    public List<Collaborator> listCollaborator() throws Exception {
+        return null;
+    }
+
+    @Override
+    public Collaborator searchByDni(String dni) throws Exception {
         return null;
     }
 }
