@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
       
       Toast.fire({
         icon: 'success',
-        title: 'Se ha logeado correctamente'
+        title: 'Ha iniciado sesión correctamente'
       });
       this.router.navigate(['index/accesoadmin']);
      } else {
@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
       
       Toast.fire({
         icon: 'error',
-        title: 'No se ha podido logear, verifique su información'
+        title: 'No inició sesión, verifique su información'
       })   
     }
   }

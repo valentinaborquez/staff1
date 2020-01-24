@@ -15,10 +15,6 @@ export class LoginService {
     } else {
       return false;
     }
-    if(user == "colab" && pass=="123") {
-      return true;
-    } else {
-      return false;
-    }
+    
   }
 }
