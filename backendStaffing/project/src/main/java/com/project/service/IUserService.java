@@ -15,6 +15,8 @@ public interface IUserService {
     ResponseUserDto updateUser(Long id_user, ReqUserDto objReqUserDto) throws Exception;
     boolean deleteUser(Long id) throws Exception;
 
+
+
     ResponseUserDto saveUser(String email, String password) throws Exception;
     User findById(Long objId) throws Exception;
 
