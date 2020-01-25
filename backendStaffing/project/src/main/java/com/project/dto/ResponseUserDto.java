@@ -5,9 +5,7 @@ import com.project.model.Collaborator;
 
 public class ResponseUserDto {
     private String emailDto;
-    private String passwordDto;
-    private Administrator administratorDto;
-    private Collaborator collaboratorDto;
+    private byte rol;
 
     public String getEmailDto() {
         return emailDto;
@@ -17,27 +15,11 @@ public class ResponseUserDto {
         this.emailDto = emailDto;
     }
 
-    public String getPasswordDto() {
-        return passwordDto;
+    public byte getRol() {
+        return rol;
     }
 
-    public void setPasswordDto(String passwordDto) {
-        this.passwordDto = passwordDto;
-    }
-
-    public Administrator getAdministratorDto() {
-        return administratorDto;
-    }
-
-    public void setAdministratorDto(Administrator administratorDto) {
-        this.administratorDto = administratorDto;
-    }
-
-    public Collaborator getCollaboratorDto() {
-        return collaboratorDto;
-    }
-
-    public void setCollaboratorDto(Collaborator collaboratorDto) {
-        this.collaboratorDto = collaboratorDto;
+    public void setRol(byte rol) {
+        this.rol = rol;
     }
 }

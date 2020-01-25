@@ -17,11 +17,26 @@ public class User {
     @Column(name = "password" , nullable = false)
     private String password;
 
+    @Column(name = "rol" , nullable = false)
+    private byte rol;
+
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Administrator administrator;
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Collaborator collaborator;
+
+    public void setId_user(Long id_user) {
+        this.id_user = id_user;
+    }
+
+    public byte getRol() {
+        return rol;
+    }
+
+    public void setRol(byte rol) {
+        this.rol = rol;
+    }
 
     public long getId_user() {
         return id_user;

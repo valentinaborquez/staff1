@@ -33,6 +33,11 @@ public class UserImp implements IUserService {
     }
 
     @Override
+    public User searchById(Long obId) throws Exception {
+        return null;
+    }
+
+    @Override
     public User findById(Long objId) {
         User UserLocal = null;
         try{
@@ -45,12 +50,29 @@ public class UserImp implements IUserService {
     }
 
     @Override
-    public ResponseCollaboratorDto validateUser(ReqUserDto objReqUserDto) throws Exception {
-        return null;
+    public ResponseUserDto validateUser(String email, String password) throws Exception {
+        ResponseUserDto objResponseUserDto=null;
+        User objUser;
+        try {
+            objUser = UserRepository.findByEmail(email);
+            if (null != email && null != password && null != objUser && objUser.getPassword().equals(password)){
+                objResponseUserDto = new ResponseUserDto();
+                objResponseUserDto.setEmailDto(objUser.getEmail());
+                objResponseUserDto.setRol(objUser.getRol());
+            }
+        }catch (Exception e){
+            throw new Exception("Error valdacion");
+        }
+        return objResponseUserDto;
     }
 
     @Override
     public ResponseUserDto updateUser(Long id_user, ReqUserDto objReqUserDto) throws Exception {
         return null;
+    }
+
+    @Override
+    public boolean deleteUser(Long id) throws Exception {
+        return false;
     }
 }
