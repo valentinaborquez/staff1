@@ -1,8 +1,4 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-     
           <a class="nav-link salir" [routerLink]="['login']"> Salir </a>
       </nav>
     
@@ -14,7 +10,7 @@
         <br>
         <div class="container">
           <form>
-              <table  [id] = '"tablacol"' datatable [dtOptions]='dtoptions' class="table table-dark">
+              <!-- <table  [id] = '"tablacol"' datatable [dtOptions]='dtoptions' class="table table-dark">
                   <thead>
                     <tr>
                       <th scope="col">Nombre Proyecto</th>
@@ -25,9 +21,56 @@
                     </tr>
                   </thead>
                   <tbody>
-               
+                    <tr *ngFor="let proyecto of proyectos">
+                      <td>{{proyecto["nombre"]}}</td>
+                      <td>{{proyecto["descripcion"]}}</td>
+                      <td>{{proyecto["fechai"]}}</td>
+                      <td>{{proyecto["fechat"]}}</td>
+                      <td>{{proyecto["estado"]}}</td>
+
+                    </tr>
                   </tbody>
-                </table>
+                </table> -->
+
+                <mat-form-field>
+                  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar...">
+                </mat-form-field>
+                
+                <div class="mat-elevation-z8">
+                  <table mat-table [dataSource]="dataSource" matSort>
+                
+                    <ng-container matColumnDef="nombre">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre Proyecto </th>
+                      <td mat-cell *matCellDef="let row"> {{row.nombre}} </td>
+                    </ng-container>
+                
+                    <ng-container matColumnDef="descripcion">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Descripcion </th>
+                      <td mat-cell *matCellDef="let row"> {{row.descripcion}}</td>
+                    </ng-container>
+                
+                    <ng-container matColumnDef="fechai">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Fecha Inicio </th>
+                      <td mat-cell *matCellDef="let row"> {{row.fechai}} </td>
+                    </ng-container>
+                
+                    <ng-container matColumnDef="fechat">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Fecha Término </th>
+                      <td mat-cell *matCellDef="let row" > {{row.fechat}} </td>
+                    </ng-container>
+    
+                    <ng-container matColumnDef="estado">
+                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Estado </th>
+                      <td mat-cell *matCellDef="let row"> {{row.estado}} </td>
+                    </ng-container>
+                
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+                    </tr>
+                  </table>
+                
+                  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+                </div>
             </form>    
       </div>
       <br>

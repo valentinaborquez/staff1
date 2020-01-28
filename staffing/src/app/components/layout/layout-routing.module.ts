@@ -19,10 +19,10 @@ const sideRoutes: Routes = [{
 	{	path: 'registrocol', component: RegistrocolComponent },
   	{	path: 'crearproyectos', component: CrearproyectosComponent },
   	{   path: 'reportestaff', component: ReportestaffComponent },
-	{	path: 'asignarhab', component: AsignarhabComponent },
+	{	path: 'asignarhab/:rut', component: AsignarhabComponent },
 	{	path: 'crearhab', component: CrearhabComponent },
 	{	path: 'detalleproyectos', component: DetalleproyectosComponent },
-  	{	path: 'asignarcol', component: AsignarcolComponent }
+  	{	path: 'asignarcol/:idproyecto', component: AsignarcolComponent }
 	,
 		// {
 		// 	path: '**',

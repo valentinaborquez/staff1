@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { RegistroService } from './../../services/registro.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
+import { RegistroService } from '../../services/registro.service';
 
-import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-registrocol',
@@ -10,34 +10,27 @@ import Swal from 'sweetalert2'
   styleUrls: ['./registrocol.component.css']
 })
 export class RegistrocolComponent implements OnInit {
-  private nombre: string = '';
-  private apellido: string = '';
-  private correo: string = '';
-  private rut: string = '';
-  private contrasena: string = '';
-  private cargo: string = '';
-
+  private nombre = '';
+  private apellido = '';
+  private correo = '';
+  private rut = '';
+  private contrasena = '';
+  private cargo = '';
+  registroservice: any;
+  registro: any;
   constructor(
-    private router: Router,
-    private registroService: RegistroService
-  ) { }
+    private registrar : RegistroService,
+    private router : Router
+    ) { }
   
   ngOnInit() {
   }
 
-  registro(){
-    if(this.nombre !== '' && this.apellido !== '' && this.correo !== '' && this.rut !== '' && this.contrasena !== '' && this.cargo !== '') {
-      this.nombre = "";
-      this.apellido = "";
-      this.correo = "";
-      this.rut = "";
-      this.contrasena = "";
-      this.cargo = "";
-      let registro = this.registroService.registro(this.nombre, this.apellido, this.correo, this.rut, this.contrasena, this.cargo);
-      if(registro){
-        const Toast = Swal.mixin({
+  save(){
+    this.registrar.guardar(this.nombre, this.apellido, this.rut, this.correo, this.contrasena, this.cargo);
+    const Toast = Swal.mixin({
           toast: true,
-          position: 'top-end',
+          position: 'top-end',  
           showConfirmButton: false,
           timer: 4000,
           timerProgressBar: true,
@@ -51,32 +44,11 @@ export class RegistrocolComponent implements OnInit {
           icon: 'success',
           title: 'Se ha registrado correctamente, por favor asigne habilidades'
         });
-        this.router.navigate(['index/asignarhab']);
+        this.router.navigate(['index/asignarhab/' + this.rut]);
  
-
       }
-    } else {
-      const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        onOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-      })
-      
-      Toast.fire({
-        icon: 'error',
-        title: 'No se ha podido registrar, verifique su información'
-      })   
-    }
-    
-
-  }
-  setNombre(value: any) {
+  
+  setNombre(value: string){
     this.nombre = value;
 
   }
@@ -90,7 +62,7 @@ export class RegistrocolComponent implements OnInit {
   }
   setCargo(value: any) {
     this.cargo  = value;
-
+                                                          
   }
   setContrasena(value: any) {
     this.contrasena = value;

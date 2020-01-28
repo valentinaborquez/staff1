@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   login() {
     console.log('logeando', this.user, this.pass);
     let login = this.loginService.login(this.user, this.pass);
-    if(login) {
+    if(login == "admin") {
       // Logeo exitoso
       const Toast = Swal.mixin({
         toast: true,
@@ -42,24 +42,7 @@ export class LoginComponent implements OnInit {
         title: 'Ha iniciado sesión correctamente'
       });
       this.router.navigate(['index/accesoadmin']);
-     } else {
-      const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        onOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-      })
-      
-      Toast.fire({
-        icon: 'error',
-        title: 'No inició sesión, verifique su información'
-      })   
-    }
+     } 
   }
   setUser(value: any) {
     this.user = value;

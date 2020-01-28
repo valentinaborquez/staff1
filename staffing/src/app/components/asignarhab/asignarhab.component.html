@@ -1,24 +1,21 @@
-
-
+<div class="container">
   
-<h3>ASIGNAR HABILIDADES TÉCNICAS<span class="badge badge-secondary"></span></h3>
-<br>
-<form>
-<div class="form-group">
+  <h3>ASIGNAR HABILIDADES TÉCNICAS<span class="badge badge-secondary"></span></h3>
   <br>
-  <label for="Asignarhab">Seleccionar habilidades técnicas (presione ctrl para seleccionar más de una):</label>
-  <select (change)="setHabilidades($event)" multiple class="form-control" id="Asignarhab">
-    <option>PHP</option>
-    <option>C++</option>
-    <option>PYTHON</option>
-    <option>ANGULAR</option>
-    <option>JAVA</option>
-  </select>
-</div>
-</form>
-<div class="row">
-  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-    <button type="button" (click)="asignar()" class="btn btn-dark">GUARDAR</button> 
+  <form>
+  <div class="form-group">
+    <br>
+    <label for="Asignarhab">Seleccionar habilidades técnicas (presione ctrl para seleccionar más de una):</label>
+    <select (change)="setHabilidades($event)" multiple class="form-control" id="Asignarhab">
+      <option *ngFor="let hab of listahabilidades">{{hab.nombre}}</option>
+    </select>
   </div>
-
+  </form>
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <button type="button" (click)="asignar()" class="btn btn-dark">GUARDAR</button> 
+    </div>
+  
+  </div>
 </div>
+

@@ -1,6 +1,17 @@
 import { Component, OnInit, ViewChild, Renderer2 } from '@angular/core';
 import * as $ from 'jquery';
-
+import {ActivatedRoute} from '@angular/router';
+import { RegistroService } from '../../services/registro.service';
+import {MatPaginator} from '@angular/material/paginator';
+import {MatSort} from '@angular/material/sort';
+import {MatTableDataSource} from '@angular/material/table';
+export interface UserData {
+  nombre: string;
+  descripcion: string;
+  fechai: string;
+  fechat: string;
+  estado: string;
+}
 @Component({
   selector: 'app-accesocol',
   templateUrl: './accesocol.component.html',
@@ -8,71 +19,42 @@ import * as $ from 'jquery';
 })
 export class AccesocolComponent implements OnInit {
   private dtoptions: any = {};
-  constructor() { }
+  private rut: string;
+  private proyectos = [];
+  dataSource: MatTableDataSource<UserData>;
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
+  displayedColumns: string[] = ['nombre', 'descripcion', 'fechai', 'fechat', 'estado'];
+  constructor(
+    private activeRouter: ActivatedRoute,
+    private registro: RegistroService 
+  ) { }
 
   ngOnInit() {
-    var data = [
-      [
-          "Proyecto Daily",
-          "Daily Fresh Pag web Java",
-          "01-12-2020",
-          "01-24-2020",
-          "Finalizado"
-        ],
-        [
-          "Proyecto Banco Estado",
-          "Pag web Angular Full",
-          "02-13-2019",
-          "03-15-2019",
-          "Finalizado"
-        ],
-        [
-          "Proyecto Rush",
-          "DDBB Springboot",
-          "02-05-2019",
-          "07-06-2019",
-          "Finalizado"
-        ],
-        [
-          "Proyecto Wom",
-          "Registro usuario",
-          "01-08-2019",
-          "09-10-2019",
-          "Finalizado"
-        ],
-        [
-          "Proyecto Falabella",
-          "Inventario compras",
-          "07-09-2019",
-          "15-11-2019",
-          "Finalizado"
-        ],
+    this.activeRouter.params.subscribe(res => {
+      this.rut = res.rut;
+      this.registro.getProyectosPorColaborador(res.rut).subscribe(res => {
+        let aux = [];
+        res.forEach(proy =>{
+          proy["colaboradores"].forEach(col => {
+            if(col == this.rut) {
+              aux.push({
+                nombre: proy['nombre'],
+                descripcion: proy['descripcion'],
+                fechai:proy['fechai'],
+                fechat:proy['fechat'],
+                estado:proy['estado'],
+              });
+            }
+          });
+        })
+        this.dataSource = new MatTableDataSource(aux);
 
-        [
-          "Proyecto Santander",
-          "Sistema interno",
-          "04-11-2019",
-          "10-12-2019",
-          "Finalizado"
-        ],
-        [
-          "Proyecto Luckas",
-          "Staffing Interno",
-          "10-11-2018",
-          "09-12-2018",
-          "Finalizado"
-        ],
-        [
-          "Proyecto Movilh",
-          "Pagina web",
-          "29-12-2019",
-          "29-01-2020",
-          "Activo"
-        ]
-  ]
-  this.dtoptions = {
-    data: data
-  }  
+      })
+    })
+  // this.dtoptions = {
+  //   data: data
+  // }  
 
   }
 

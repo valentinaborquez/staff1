@@ -7,11 +7,11 @@
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="titulo">HABILIDADES REQUERIDAS</label>
-          <input type="text" class="form-control" id="titulo" placeholder="Ingresar habilidad">
+          <input type="text" (keyup)="setHabilidades($event.target.value)" class="form-control" id="titulo" placeholder="Ingresar habilidad">
          <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <br>
-            <button type="button" (click)="guardarhab()" class="btn btn-dark"  >Guardar</button> 
+            <button type="button" (click)="guardarhab()" class="btn btn-dark">Guardar</button> 
           </div>
         </div>
         <div class="form-group col-md-4"></div>

@@ -11,6 +11,14 @@ import { CrearhabComponent } from './../../components/crearhab/crearhab.componen
 import { RegistrocolComponent } from './../../components/registrocol/registrocol.component';
 import { ReportestaffComponent } from './../../components/reportestaff/reportestaff.component';
 import { VerproyectosComponent } from './../../components/verproyectos/verproyectos.component';
+import {MatTableModule} from '@angular/material/table';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatRippleModule,
+  MatPaginatorModule 
+} from '@angular/material';
 import {DataTablesModule} from 'angular-datatables';
 
 @NgModule({
@@ -30,7 +38,14 @@ import {DataTablesModule} from 'angular-datatables';
       CommonModule,
       DataTablesModule,
       LayoutRoutingModule,
-    ]
+      MatTableModule,
+      MatButtonModule,
+      MatFormFieldModule,
+      MatInputModule,
+      MatRippleModule,
+      MatPaginatorModule 
+    ],
+
   })
   export class LayoutModule { }
   
